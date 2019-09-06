@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Scores.ScoreViewController"
+            fx:id="scoreViewPane"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <content>
+        <BorderPane>
+            <top>
+                <ListView fx:id="scoreListView"/>
+            </top>
+            <bottom>
+                <Button text="Submit" BorderPane.alignment="TOP_CENTER" onAction="#showScore"/>
+            </bottom>
+
+        </BorderPane>
+
+    </content>
+
+</DialogPane>

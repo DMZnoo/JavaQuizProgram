@@ -1,0 +1,50 @@
+Welcome to the DataModel.Quiz program!
+Before getting into details, I'd like to point out the fact that all of the photos that had been used in this program are not of my own.
+This program is not intended for commercial purposes and it will remain free for any user.
+<picture>
+
+I. Create DataModel.Quiz
+    There are three types of questions: Multi-choice, Written, and True/False. In order to load the quiz, you must first create one.
+    Click on "Build New DataModel.Quiz" -> Type in the name of the quiz and click "OK" -> new Pop-up Window.
+    Once you've gotten to the window, you will see a table on the left and the text field, drop down option on the right.
+    The text field on the top is where you'd put your questions. If it's empty, you won't be able to submit your question.
+    Once finished typing the quiz, now choose one of the items in the drop down menu for your answer.
+    For the True/False option, you'd just have to choose one of the buttons to indicate your correct answer.
+    The Multi-Choice option would have text fields and buttons as well.
+    You must indicate the correct answer by ticking one of the choices and type in the answer in the text field.
+    The Written option would show you the text field by itself. Type in your answer.
+    Once finished, submit your answer, if any one of the fields is missing, it will give you a warning.
+    If successful, the table will be populated with your question. You can now click on it and check if it's proper.
+    Once clicked the side view will now show the preview of the question that you have clicked.
+    To go back, you can click the button on the top right corner and it will switch to the editor view.
+    To delete questions, right click the cell in the table and click on "Delete".
+    Once finished, click on the left corner to save and exit. To not save, just click on the exit button and click "OK".
+
+II. Edit DataModel.Quiz
+    After creating the quiz, there might have been something that you'd forgot to add or mistake that had been made with the content.
+    During creation, it is not possible for any change to be made once it had been submitted.
+    However, the user can edit them once it had been created/submitted to the program. The editor window is similar in design. However,
+    in the editor window, you can modify previous contents, whether it is the question or the answer, or submit new questions.
+    Once edits had been made, click on the left corner to save and exit. The changes will be permanent and the user would have to save to exit.
+
+III. Load DataModel.Quiz
+    When clicked, this will show a list of quizzes that are available. Click on one of the cells and "Submit". Once submitted, the new window
+    will be shown. Once finished choosing the answer, click on "Next", which is located on the bottom right corner. If the answer was wrong,
+    the thumb down animation will play. If right, the thumb up animation will be played. The score board will store all chosen/correct answers
+    and will be able to be viewed after the quiz.
+
+IV. Score Board
+    The Score Board will keep each instance of the quiz. It will show as the time that the user had taken the quiz and once click "Submit", the
+    user will be able to view his/her response as well as the correct answer for the corresponding question.
+    It will also show the score on the bottom of the window.
+
+V. Closing
+    Any issues/bugs can be submitted through this email: daniel.jnw.lee@gmail.com
+    Please contact me through the email as well for any questions regarding the software.
+
+    Thank you,
+    Jinwoo Lee
+
+
+
+

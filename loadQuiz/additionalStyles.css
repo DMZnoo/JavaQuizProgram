@@ -1,0 +1,226 @@
+.root {
+    -fx-font-family: Mali;
+}
+
+
+#welcomeMessage {
+    -fx-font-weight:BOLD 800;
+    -fx-font-size: 40;
+    -fx-text-fill:rgb(96,255,173) ;
+
+}
+.button {
+    -fx-opacity:0.5;
+    -fx-background-color:
+            rgb(80, 0, 209),
+            linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+            linear-gradient(#20262b, #191d22),
+            radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+}
+.button:hover {
+    -fx-opacity:1.0;
+}
+
+#loadPage,#editPage {
+    -fx-background-color:
+            rgb(122, 28, 216),
+            linear-gradient(#594072 0%, #370866 20%, #2b0f47 100%),
+            linear-gradient(#553377, #2b0f47),
+            radial-gradient(center 50% 0%, radius 100%, rgba(125, 96, 155,0.9), rgba(255,255,255,0));
+
+}
+#quizPreview {
+    -fx-opacity:0.8;
+}
+
+.list-cell:even:empty {
+    -fx-opacity:0.2;
+    -fx-background-color:
+            rgb(102, 0, 200),
+            radial-gradient(center 50% 0%, radius 100%, rgba(125, 96, 155,0.2), rgba(255,255,255,0));
+    /*-fx-font-weight: normal;*/
+
+}
+
+.list-cell:even:filled {
+    -fx-background-color:
+            rgb(102, 0, 255),
+            radial-gradient(center 50% 0%, radius 100%, rgba(125, 96, 155,0.4), rgba(255,255,255,0));
+    -fx-text-fill: rgb(252, 218, 0);
+    /*-fx-font-weight: normal;*/
+}
+
+/*.list-cell:odd:filled {*/
+    /*-fx-background-color:*/
+            /*rgb(102, 0, 200),*/
+            /*radial-gradient(center 50% 0%, radius 100%, rgba(125, 96, 155,0.2), rgba(255,255,255,0));*/
+    /*-fx-text-fill:rgb(252, 218, 0);*/
+
+    /*-fx-font-weight: normal;*/
+/*}*/
+.list-cell:odd:filled {
+    /*-fx-background-color:*/
+            /*rgb(252, 218, 0),*/
+            /*radial-gradient(center 50% 0%, radius 100%, rgba(250, 218, 0,0.4), rgba(255,255,255,0));*/
+    -fx-background-color: transparent;
+    -fx-text-fill:rgb(252, 218, 0);
+}
+
+.list-cell:even:filled:hover, .list-cell:even:filled:selected{
+    -fx-opacity: 1.0;
+    -fx-background-color:
+            rgb(102, 0, 255),
+            linear-gradient(#c9a5ff 0%, #8002ff 20%, #9116dd 100%),
+            linear-gradient(#a468ff, #8002ff);
+    -fx-text-fill:rgba(252, 118, 0,1);
+    -fx-font-weight:BOLD;
+}
+.list-cell:odd:hover:filled:hover,.list-cell:odd:filled:selected {
+    -fx-opacity: 1.0;
+    -fx-background-color:
+            rgba(252, 218, 0,1),
+            linear-gradient(#f7f9ae 0%, #f9ff5b 20%, #ecf400 100%),
+            linear-gradient(#f9ff5b, #dcf442);
+    -fx-text-fill:rgba(252, 118,0,1);
+    -fx-font-weight:BOLD;
+
+}
+
+#addNewQuizPane {
+
+    -fx-background-color:
+            rgb(102, 0, 255),
+            radial-gradient(center 50% 0%, radius 100%, rgba(125, 96, 155,0.7), rgba(255,255,255,0));
+    -fx-font-color:rgb(252, 118, 0);
+    -fx-font-weight:BOLD;
+    -fx-font-size: 15;
+
+}
+#nameQuiz{
+    -fx-text-fill:rgb(252, 118, 0);
+    -fx-font-weight:BOLD;
+    -fx-font-size: 15;
+}
+
+#newQuizDetailsWrapper {
+    -fx-text-fill:rgb(252, 118, 0);
+    -fx-font-weight:BOLD;
+    -fx-font-size: 15;
+    -fx-background-color:
+            rgb(102, 0, 255),
+            radial-gradient(center 50% 0%, radius 100%, rgba(125, 96, 155,0.7), rgba(255,255,255,0));
+}
+
+#questionPreview {
+    -fx-text-fill: rgb(252, 118, 0);
+    -fx-background-color:
+            rgb(255, 38, 74),
+            radial-gradient(center 50% 0%, radius 100%, rgba(125, 96, 155,0.7), rgba(255,255,255,0));
+}
+
+.table-row-cell:even:empty {
+    -fx-opacity:0.2;
+    /*-fx-text-fill: rgb(252, 118, 0);*/
+    -fx-background-color:
+            rgb(102, 0, 255),
+            radial-gradient(center 50% 0%, radius 100%, rgba(125, 96, 155,0.2), rgba(255,255,255,0));
+}
+.table-row-cell:odd:empty {
+    -fx-opacity:0.2;
+    /*-fx-text-fill: rgb(252, 118, 0);*/
+    -fx-background-color:
+            rgb(102, 0, 255),
+            radial-gradient(center 50% 0%, radius 100%, rgba(125, 96, 155,0.2), rgba(255,255,255,0));
+}
+
+
+.table-row-cell:even:filled {
+    /*-fx-text-fill: rgb(252, 118, 0);*/
+    -fx-background-color:
+            rgb(150, 30, 255),
+            radial-gradient(center 50% 0%, radius 100%, rgba(125, 96, 155,0.4), rgba(255,255,255,0));
+}
+
+
+.table-row-cell:odd:filled {
+    /*-fx-text-fill: rgb(252, 118, 0);*/
+    -fx-background-color:
+            rgb(180, 112, 239),
+            radial-gradient(center 50% 0%, radius 100%, rgba(125, 96, 155,0.4), rgba(255,255,255,0));
+}
+
+.column-header-background {
+    -fx-background-color:
+            rgb(252, 118, 0),
+            radial-gradient(center 50% 0%, radius 100%, rgba(125, 96, 155,0.2), rgba(255,255,255,0));
+}
+
+.menu-bar {
+    -fx-opacity:0.5;
+    -fx-background-color:
+            rgb(169, 85, 204),
+            radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    /*-fx-text-fill: white;*/
+    /*-fx-effect: drop shadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );*/
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+}
+
+#forEssay {
+    -fx-text-fill: rgba(142, 0, 201,0.8);
+}
+
+#question_input {
+    -fx-text-fill: rgba(201, 46, 0,0.8);
+}
+
+
+#optionSet, #optionSet .context-menu {
+    -fx-background-color: rgb(66, 221, 131);
+    -fx-text-fill: WHITE;
+    -fx-mark-color: rgba(142, 0, 201,0.8);
+
+}
+
+#optionSet .menu-item > .label {
+    -fx-text-fill: white;
+}
+#optionSet .menu-item:focused > .label,.choice-box .menu-item:focused {
+    -fx-text-fill: black;
+    -fx-background-color: rgb(252, 118, 0);
+}
+
+#quizName {
+    -fx-text-fill: rgba(114,131,148,0.3);
+}
+
+
+#takeQuizPane {
+    -fx-background-color: rgba(0, 20, 100,0.8);
+}
+
+#delete {
+    -fx-background-color: linear-gradient(#be1d00, #ff5400);
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-pref-height: 35px;
+    -fx-pref-width: 50px;
+    -fx-padding: 0 5 0 0;
+}
+
+#nextButton {
+    -fx-pref-height: 35px;
+    -fx-pref-width: 50px;
+    -fx-padding: 0 5 0 0;
+
+}

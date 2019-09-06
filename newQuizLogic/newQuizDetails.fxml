@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.shape.Box?>
+<BorderPane
+        fx:id="newQuizDetailsWrapper"
+        xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="newQuizLogic.NewQuizController"
+            prefHeight="600.0" prefWidth="700.0">
+
+    <top>
+
+    <MenuBar>
+
+        <Menu text="File">
+            <items>
+                <MenuItem text="Save and Exit" onAction="#saveExit"/>
+                <!--<SeparatorMenuItem/>-->
+                <!--<MenuItem text="Exit"/>-->
+            </items>
+        </Menu>
+    </MenuBar>
+    </top>
+
+    <left>
+        <TableView fx:id="questionPreview">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+            <columns>
+                <TableColumn text="Questions Panel" fx:id="question_panel">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name"/>
+
+                    </cellValueFactory>
+
+
+
+                </TableColumn>
+            </columns>
+            <rowFactory/>
+            <BorderPane.margin>
+                <Insets right="10.0" />
+            </BorderPane.margin>
+
+
+
+        </TableView>
+    </left>
+    <center>
+        <VBox fx:id="questionDisplay"  visible="false" maxHeight="Infinity">
+
+            <HBox>
+                <Label text="Question: " textFill="GREEN" wrapText="true" lineSpacing="10" fx:id="selectedQuestion">
+                    <font>
+                        <Font name = "Arial italic" size = "15"/>
+                    </font>
+                </Label>
+            </HBox>
+            <HBox>
+                <VBox fx:id="selectedAnswer"/>
+
+            </HBox>
+        </VBox>
+    </center>
+    <right>
+        <!--<GridPane>-->
+            <VBox  fx:id="addLogicDisplay" spacing="15">
+                <HBox>
+                    <TextArea accessibleText="Question" wrapText="true" fx:id="question_input"/>
+                </HBox>
+
+                <HBox spacing="10">
+                    <Label text="DataModel.Question Type"/>
+                </HBox>
+
+                <HBox>
+                    <ChoiceBox value="Choose" fx:id="optionSet" onAction="#returnChoice">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="True/False"/>
+                                <String fx:value="Multiple Choice"/>
+                                <String fx:value="Written Response"/>
+                            </FXCollections>
+                        </items>
+                    </ChoiceBox>
+                </HBox>
+                <VBox spacing="20" prefWidth="300">
+
+
+                    <ScrollPane fx:id="scrollForMulti" prefHeight="200" prefWidth="300"  visible="false" managed="false">
+                        <VBox fx:id="forMultiChoice" spacing="20" VBox.vgrow="ALWAYS" prefWidth="520">
+
+                        </VBox>
+                    </ScrollPane>
+                    <VBox fx:id="forEssay"/>
+                    <HBox fx:id="forBoolean" spacing="15"/>
+                    <HBox spacing="15">
+                        <Button text="Add Choice" onAction="#addMoreChoice" visible="false" fx:id="addChoice"/>
+                        <Button text="Delete Choice" onAction="#deleteChoice" visible="false" fx:id="removeChoice"/>
+                    </HBox>
+                    <Button text="Submit" onAction="#newQuizSubmission" fx:id="quizSubmission"/>
+                    <Button text="Edit" onAction="#newQuizSubmission" fx:id="editSubmission" visible="false" disable="true"/>
+                    <Button text="Add new question" onAction="#addinit" fx:id="addQuestion" visible="false"/>
+                </VBox>
+            </VBox>
+
+        <!--</GridPane>-->
+    </right>
+
+
+</BorderPane>

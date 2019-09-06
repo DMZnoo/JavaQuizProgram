@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane
+        fx:id="addNewQuizPane"
+        xmlns="http://javafx.com/javafx"
+            fx:controller="newQuizLogic.NewQuizController"
+            xmlns:fx="http://javafx.com/fxml"
+            prefHeight="200.0" prefWidth="400.0">
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="Name of the Quiz: " GridPane.rowIndex="0" GridPane.columnIndex="0" fx:id="nameQuiz"/>
+            <TextField fx:id="quizName" GridPane.rowIndex="0" GridPane.columnIndex="1" text="Name of the quiz" onMouseClicked="#exampleFill"/>
+
+        </GridPane>
+    </content>
+
+
+
+</DialogPane>

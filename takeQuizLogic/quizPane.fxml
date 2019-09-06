@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.ProgressBar?>
+<BorderPane fx:id="takeQuizPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="takeQuizLogic.quizPaneController">
+    <top>
+        <BorderPane fx:id="quizPaneTop">
+            <left>
+                <BorderPane>
+                    <top>
+                        <BorderPane>
+                            <left>
+                                <HBox>
+                                    <Label fx:id="scoreBoard" text="Points" textFill="deepskyblue">
+                                        <font>
+                                            <Font name="Arial italic" size="20" />
+                                        </font>
+                                    </Label>
+                                </HBox>
+                            </left>
+                            <BorderPane.margin>
+                                <Insets bottom="10.0" />
+                            </BorderPane.margin>
+                        </BorderPane>
+                    </top>
+                    <BorderPane.margin>
+                        <Insets topRightBottomLeft="10.0" />
+                    </BorderPane.margin>
+                    <bottom>
+                        <HBox spacing="15">
+                            <Label text="0" textFill="chartreuse" fx:id="currentScore">
+                                <font>
+                                    <Font name="Arial italic" size="40" />
+                                </font>
+
+                            </Label>
+                            <Label text="/" textFill="firebrick">
+                                <font>
+                                    <Font name="Arial italic" size="20" />
+                                </font>
+                            </Label>
+                            <Label text="100" textFill="crimson">
+                                <font>
+                                    <Font name="Arial italic" size="20" />
+                                </font>
+                            </Label>
+                        </HBox>
+                    </bottom>
+                </BorderPane>
+            </left>
+            <BorderPane.margin>
+                <Insets topRightBottomLeft="10.0" />
+            </BorderPane.margin>
+
+            <right>
+                <BorderPane>
+                    <top>
+                        <HBox>
+                            <Label text="Remaining Questions" textFill="chocolate">
+                                <font>
+                                    <Font name="Arial italic" size="15" />
+                                </font>
+                            </Label>
+                        </HBox>
+                    </top>
+                    <BorderPane.margin>
+                        <Insets topRightBottomLeft="10.0" />
+                    </BorderPane.margin>
+                    <bottom>
+                        <HBox spacing="15">
+                            <Label text="1" textFill="chartreuse" fx:id="currentQuestionNum">
+                                <font>
+                                    <Font name="Arial italic" size="40" />
+                                </font>
+                            </Label>
+                            <Label text="/" textFill="firebrick">
+                                <font>
+                                    <Font name="Arial italic" size="20" />
+                                </font>
+                            </Label>
+                            <Label text="0" textFill="crimson" fx:id="questionsCountTotal">
+                                <font>
+                                    <Font name="Arial italic" size="20" />
+                                </font>
+                            </Label>
+                        </HBox>
+                    </bottom>
+
+                </BorderPane>
+            </right>
+        </BorderPane>
+    </top>
+
+    <center>
+
+    </center>
+    <bottom>
+        <BorderPane>
+            <center>
+                <ProgressBar fx:id="quizProgress">
+
+                </ProgressBar>
+            </center>
+            <right>
+                <Button onAction="#nextQuestion" text="Next" fx:id="nextButton">
+                    <font>
+                        <Font name="Arial italic" size="15" />
+                    </font>
+                </Button>
+            </right>
+            <BorderPane.margin>
+                <Insets topRightBottomLeft="30.0" />
+            </BorderPane.margin>
+        </BorderPane>
+    </bottom>
+
+
+</BorderPane>
